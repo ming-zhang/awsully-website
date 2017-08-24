@@ -1,0 +1,19 @@
+html,
+body,
+#cover,
+#cover .row {
+    height: 100%;
+}
+
+#cover .row {
+    padding-top: 15%;
+}
+
+#cover-title {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.caret {
+    font-family: 'Roboto Mono', monospace;
+    background: #000;
+}
