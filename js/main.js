@@ -16,4 +16,12 @@ typewriter(coverTitle).withAccuracy(96)
     .waitRange(1000, 1500)
     .type('What do you want to know about me today?')
     .waitRange(500, 1000)
-    .put('<br/>');
+    .put('<br/>', )
+    .waitRange(500, 1000)
+    .put('', putDropdown);
+
+function putDropdown() {
+    $('.caret').remove();
+    $('#cover-options').append('<select id="cover-options-select" placeholder="Select an option..."><option value="">Select an option...</option><option value="CV">Curriculum vitae</option><option value="WRIT">Writing portfolio</option><option value="EDIT">Editing testimonials</option><option value="SKIL">Skills</option></select>');
+    $('#cover-options-select').selectize();
+}

@@ -1,11 +1,15 @@
 html,
 body,
-#cover,
-#cover .row {
+#cover {
     height: 100%;
 }
 
 #cover .row {
+    height: auto;
+    padding-top: 0;
+}
+
+#cover {
     padding-top: 15%;
 }
 
@@ -13,7 +17,21 @@ body,
     font-family: 'Roboto Mono', monospace;
 }
 
+#cover-greeting {
+	padding: 0;
+}
+
 .caret {
     font-family: 'Roboto Mono', monospace;
     background: #000;
+}
+
+#cover-options {
+    width: 50%;
+}
+
+#cover-options select
+#cover-options input,
+#cover-options .select-control {
+    width: 100%;
 }
